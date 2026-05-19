@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="모의고사 기출 문제·정답·해설 PDF 바로가기 자료실" />
+  <meta name="keywords" content="모의고사, 수능, 기출, 고1, 고2, 고3, 국어, 수학, 영어, 한국사, 탐구, PDF" />
+  <title>모두의 모의고사 | PDF 바로가기</title>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5341216668095254" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="brand" href="#">
+        <span class="logo">M</span>
+        <span><strong>모두의 모의고사</strong><em>과목 버튼을 누르면 PDF가 바로 열립니다.</em></span>
+      </a>
+      <form class="search" onsubmit="return false">
+        <input id="topSearch" placeholder="예: 2026 3월 고3 국어" />
+        <button>검색</button>
+      </form>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <button data-quick="전체" class="active">전체</button>
+      <button data-quick="고3">고3</button>
+      <button data-quick="고2">고2</button>
+      <button data-quick="고1">고1</button>
+      <button data-quick="수능">수능</button>
+      <button data-quick="6월">6월</button>
+      <button data-quick="9월">9월</button>
+      <button data-quick="국어">국어</button>
+      <button data-quick="수학">수학</button>
+      <button data-quick="영어">영어</button>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <h1>모의고사 PDF를<br />과목별로 바로 열기</h1>
+        <p>업데이트를 실행하면 게시글 안의 PDF 주소를 추출하여 국어·수학·영어·한국사·탐구별 버튼으로 자동 정리합니다.</p>
+      </div>
+      <div class="stats">
+        <div><strong id="statExams">0</strong><span>시험</span></div>
+        <div><strong id="statLinks">0</strong><span>PDF 링크</span></div>
+        <div><strong id="statPosts">0</strong><span>게시글</span></div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2 id="title">전체 자료</h2>
+        <span id="count">0개</span>
+      </div>
+      <form class="filters" onsubmit="return false">
+        <label>검색어<input id="keyword" placeholder="연도, 월, 학년, 과목 검색" /></label>
+        <label>학년<select id="grade"><option value="">전체</option><option>고3</option><option>고2</option><option>고1</option></select></label>
+        <label>시행연도<select id="examYear"><option value="">전체</option></select></label>
+        <label>학년도<select id="academicYear"><option value="">전체</option></select></label>
+        <label>월<select id="month"><option value="">전체</option></select></label>
+      </form>
+      <div id="cards" class="cards"></div>
+    </section>
+
+    <section class="notice">
+      <h2>업데이트 방법</h2>
+      <p><b>update_from_horaeng.bat</b>을 더블클릭하면 게시글과 PDF 주소를 다시 추출하고, 이 페이지의 자료 목록을 갱신합니다.</p>
+    </section>
+  </main>
+
+  <footer class="wrap footer">© <span id="yearNow"></span> 모두의 모의고사</footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+실행 순서
+
+1. 이 ZIP 파일을 압축 해제합니다.
+2. 압축을 푼 폴더 안에서 RUN_1_UPDATE_LINKS.cmd를 더블클릭합니다.
+3. Python이 없다고 나오면 Python 설치 화면이 열립니다.
+   설치할 때 반드시 Add python.exe to PATH를 체크한 뒤 설치하세요.
+4. 설치 후 RUN_1_UPDATE_LINKS.cmd를 다시 더블클릭합니다.
+5. 작업이 끝나면 index_standalone.html이 자동으로 열립니다.
+
+오류가 날 때
+
+- 기존 update_from_horaeng.bat에서 한글이 깨지며 'ㅣ'은(는) 내부 또는 외부 명령... 같은 오류가 나면,
+  이 새 버전의 RUN_1_UPDATE_LINKS.cmd를 사용하세요.
+- 이번 cmd 파일은 한글 명령문을 모두 제거한 ASCII 버전이라 CMD에서 깨져 실행되는 문제를 피했습니다.
+- 사이트만 열고 싶으면 RUN_2_OPEN_SITE.cmd를 더블클릭하세요.
